@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
-import '../styles/loginsignup.css';
+import '../styles/loginsignup.css'; // Ensure to rename this to LoginForm.css if you change the filename
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [userType, setUserType] = useState('Admin');
+  const [userType, setUserType] = useState('admin');
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
 
@@ -21,8 +21,6 @@ const LoginForm = () => {
       tempErrors["email"] = "Please enter a valid email address";
       isValid = false;
     }
-
-   
 
     setErrors(tempErrors);
     return isValid;
@@ -41,10 +39,10 @@ const LoginForm = () => {
 
       if (response.status === 200) {
         const userRole = response.data.role;
-        const userName = response.data.name || email; // Use name if available, otherwise use email
+        const userName = response.data.name || email;
         localStorage.setItem('username', userName);
         localStorage.setItem('role', userRole);
-        localStorage.setItem('token', response.data.token); // Store the token for session management
+        localStorage.setItem('token', response.data.token);
         alert("Login Successful!");
         navigate(`/${userRole}-dashboard`);
       }
@@ -60,10 +58,10 @@ const LoginForm = () => {
   return (
     <div className="wrapper">
       <form className="form" onSubmit={handleLogin}>
-        <select value={userType} onChange={(e) => setUserType(e.target.value)} className="input">
-          <option value="Admin">Admin</option>
-          <option value="Agent">Agent</option>
-          <option value="Client">Client</option>
+        <select value={userType} onChange={(e) => setUserType(e.target.value)} className="dropdown">
+          <option value="admin">Admin</option>
+          <option value="agent">Agent</option>
+          <option value="client">Client</option>
         </select>
         <div className="input-group">
           <input
@@ -86,7 +84,7 @@ const LoginForm = () => {
           {errors.password && <div className="error">{errors.password}</div>}
         </div>
         <div className="remember">
-          <label><input type="checkbox"/> Remember me</label>
+          <label><input type="checkbox" /> Remember me</label>
         </div>
         <button id="loginBtn" type="submit">Log in</button>
         <div className="register-link">

@@ -21,7 +21,7 @@
 .installment-calculator button {
   width: 100%;
   padding: 10px;
-  background-color: hsl(297, 85%, 71%);
+  background-color: blue;
   color: rgb(3, 3, 3);
   border: none;
   border-radius: 3px;

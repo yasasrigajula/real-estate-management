@@ -55,7 +55,7 @@ const HomePage = () => {
         <div className="sidebar">
           <InstallmentCalculator />
           <div className="featured-properties">
-            <h2>Featured Properties</h2>
+            <h2>Properties</h2>
             {featuredProperties.map((property) => (
               <FeaturedProperty key={property.id} property={property} />
             ))}

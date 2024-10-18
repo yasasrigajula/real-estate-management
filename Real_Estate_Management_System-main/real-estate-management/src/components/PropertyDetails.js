@@ -44,16 +44,13 @@ const PropertyDetails = () => {
 
   const amenities = [
     "Air Conditioning", "Barbeque", "Built-In Wardrobes",
-    "Clinic", "Dishwasher", "Fireplace",
-    "Floor Coverings", "Internet", "Park",
-    "School", "Supermarket/Store", "Transportation Hub"
+    "Clinic", "Dishwasher"
   ];
 
   const facilities = [
-    { name: "FC", value: "Ceiling Fan(s), Central" },
-    { name: "Acres", value: "14" },
-    { name: "Acres Source", value: "20" },
-    { name: "Cross Streets", value: "Stall Shower" }
+    { name: "Car paring" },
+    { name: "Swimming pool"},
+  
   ];
 
   
@@ -135,10 +132,10 @@ const PropertyDetails = () => {
       
       <div className="agent-card">
        
-        <h2>Hafsa</h2>
-        <p><strong>Email:</strong> hafsa@gmail.com</p>
+        <h2>Yasasri</h2>
+        <p><strong>Email:</strong> yasasri@gmail.com</p>
         <p><strong>Phone:</strong> 9878678956</p>
-        <p><strong>Specialization:</strong> Luxury Homes</p>
+        <p><strong>Specialization:</strong> Homes</p>
         <button onClick={handleContactOwner}>Contact Owner</button>
       </div>
       </div>

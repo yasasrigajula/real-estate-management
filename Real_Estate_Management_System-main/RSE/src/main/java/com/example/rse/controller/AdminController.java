@@ -19,7 +19,7 @@ public class AdminController {
     private UserService userService;
 
     @GetMapping("/users")
-//    @CrossOrigin(origins = "http://localhost:3000")
+   @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<List<User>> getAllUsers() {
         return ResponseEntity.ok(userService.findAll());
     }

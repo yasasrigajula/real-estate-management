@@ -1,15 +1,15 @@
 package com.example.rse.service;
 
-import com.example.rse.model.Property;
-import com.example.rse.repository.PropertyRepository;
+import java.util.List;
+import java.util.Optional;
 
-import jakarta.transaction.Transactional;
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import com.example.rse.model.Property;
+import com.example.rse.repository.PropertyRepository;
 
 @Service
 public class PropertyService {

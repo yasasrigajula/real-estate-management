@@ -1,163 +1,122 @@
-/* AgentDashboard.css */
-
+/* General Dashboard Styling */
 .dashboard {
-    font-family: Arial, sans-serif;
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0 auto;
-    padding: 20px;
-   
-  }
-  .agent-dashboard{
-    background-image: url('../../public/images/property-details.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  background-image: url('../../public/images/agent-dashboard.jpeg'); /* Add background image */
+  background-size: cover; /* Ensure the background covers the entire area */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Keep the background image fixed during scroll */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Vertically center all content */
+}
+
+/* Agent Dashboard Container */
+.agent-dashboard {
+  background-image: none; /* No additional background image */
+  width: 100%; /* Ensure full width usage */
+  height: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 90%; /* Full width with slight padding */
+  max-width: 1200px;
+  text-align: center; /* Center text inside header */
+}
+
+/* User Info and Welcome Text */
+.user-details h1 {
+  margin: 0;
+  font-size: 2em; /* Adjust font size for title */
+  color: #333;
+}
+
+.user-details p {
+  margin: 10px 0 0 0;
+  color: #666;
+  font-size: 1.2em; /* Smaller font size for role */
+}
+
+/* Main Content */
+.dashboard-main {
+  background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Full width, leave slight margins */
+  max-width: 1200px;
+  margin-top: 20px; /* Ensure some space between header and main content */
+}
+
+.dashboard-main h2 {
+  font-size: 1.8em; /* Heading size */
+  margin-bottom: 20px;
+}
+
+.dashboard-main p {
+  color: #666;
+  font-size: 1em; /* Smaller paragraph text */
+}
+
+/* Dashboard Stats */
+.dashboard-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px; /* Smaller gap between stat cards */
+}
+
+.stat-card {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  flex: 1;
+}
+
+.stat-card h3 {
+  font-size: 16px; /* Reduced font size */
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.stat-card p {
+  font-size: 14px; /* Smaller number text */
+  color: #4a90e2;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: center;
   }
 
-  
-  .dashboard-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-  .user-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-avatar {
-    font-size: 2em;
-    margin-right: 15px;
-  }
-  
-  .user-details h1 {
-    margin: 0;
-    font-size: 1.5em;
-  }
-  
-  .user-details p {
-    margin: 0;
-    color: #666;
-  }
-  
   .header-actions {
-    display: flex;
-    gap: 10px;
+    margin-top: 15px;
   }
-  
-  .btn {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s;
+
+  .dashboard-stats {
+    flex-direction: column;
+    gap: 15px;
   }
-  
-  .btn-dark {
-    background-color: #333;
-    color: white;
-  }
-  
-  .btn-dark:hover {
-    background-color: #555;
-  }
-  
-  .listings-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .listings-header h2 {
-    margin: 0;
-  }
-  
-  .listings-header p {
-    margin: 0;
-    color: #666;
-  }
-  
-  .search-filter {
-    margin-bottom: 20px;
-  }
-  
-  .search-bar {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 5px 10px;
-  }
-  
-  .search-bar input {
-    border: none;
-    flex-grow: 1;
-    padding: 5px;
-    font-size: 14px;
-  }
-  
-  .search-icon {
-    color: #666;
-  }
-  
-  .property-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .property-table th,
-  .property-table td {
-    text-align: left;
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .property-table th {
-    background-color: #f8f8f8;
-    font-weight: bold;
-  }
-  
-  .btn-icon {
-    /* background: none; */
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    margin-right: 5px;
-  }
-  
-  .btn-icon:hover {
-    color: #007bff;
-  }
-  
-  @media (max-width: 768px) {
-    .dashboard-header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .header-actions {
-      margin-top: 15px;
-    }
-  
-    .listings-header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .listings-header button {
-      margin-top: 10px;
-    }
-  
-    .property-table {
-      font-size: 14px;
-    }
-  
-    .property-table th,
-    .property-table td {
-      padding: 8px;
-    }
-  }
+}

@@ -1,128 +1,155 @@
-.btns {
-    display: flex !important;
-    
-}
-
-
-button {
-    margin: 8px !important;
-    padding: 8px 8px !important;
-}
-
-
 .manage-listings {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .listings-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .btn-add {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .search-filter {
-    margin-bottom: 20px;
-  }
-  
-  .search-bar {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    position: relative;
-  }
-  
-  .search-bar input {
-    width: 100%;
-    padding: 10px;
-    padding-right: 30px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .search-icon {
-    position: absolute;
-    right: 10px;
-    color: #888;
-  }
-  
-  .table-container {
-    overflow-x: auto;
-  }
-  
-  .property-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .property-table th,
-  .property-table td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
-  }
-  
-  .property-table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-  }
-  
-  .property-image {
-    width: 100%;
-    height: 45%;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-  
-  .actions {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .btn {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .btn-edit {
-    background-color: #2196F3;
-    color: white;
-  }
-  
-  .btn-delete {
-    background-color: #f44336;
-    color: white;
-  }
-  
-  .btn-save {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  input[type="text"],
-  textarea {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f5f8fc; /* Light blueish background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.listings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn-add {
+  background-color: #2b6cb0; /* Dark blue */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #1d4f91; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.search-filter {
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  background-color: #e2e8f0; /* Light grey background */
+  align-items: center;
+  padding: 10px;
+  border-radius: 25px; /* Round edges */
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; /* Extra padding for icon */
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.search-bar input:focus {
+  outline: none; /* No outline on focus */
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  color: #4a90e2; /* Accent color */
+}
+
+.table-container {
+  overflow-x: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.property-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.property-table th,
+.property-table td {
+  border: 1px solid #e2e8f0;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.property-table th {
+  background-color: #edf2f7; /* Light grey for headers */
+  font-weight: bold;
+}
+
+.property-image {
+  width: 100%;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-edit {
+  background-color: #4299e1; /* Blue for edit */
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #3182ce;
+}
+
+.btn-delete {
+  background-color: #e53e3e; /* Red for delete */
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c53030;
+}
+
+.btn-save {
+  background-color: #38a169; /* Green for save */
+  color: white;
+}
+
+.btn-save:hover {
+  background-color: #2f855a;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+

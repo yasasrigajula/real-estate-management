@@ -7,7 +7,7 @@
 
 .search-bar {
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: #edf66c;
   padding: 15px;
   border-radius: 10px;
 }
@@ -39,7 +39,7 @@
 .property-card {
   width: 100%;
   max-width: 250px;
-  border: 1px solid #ccc;
+  border: 1px solid #aef0a7;
   border-radius: 10px;
   overflow: hidden;
 }

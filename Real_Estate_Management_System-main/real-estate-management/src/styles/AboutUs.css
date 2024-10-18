@@ -1,166 +1,221 @@
+/* General styles for About Us */
 .about-us {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Header Section */
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  color: #333;
+  padding: 40px 20px;
+  background-image: url('/public/images/about-us-background.jpg'); /* AI-generated background image */
+  background-size: cover; /* Make sure it covers the entire section */
+  background-position: center; /* Center the image */
+  min-height: 100vh; /* Ensure the section takes full height */
+}
+
+/* Header Section */
+.header-section {
+ /* background-color: hsl(0, 0%, 5%);  Use primary color for the header */
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(14, 14, 14);
+}
+
+.header-section h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  padding: 20px;
+}
+
+.header-section p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+/* About Company Section */
+.about-company {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for contrast */
+  border-radius: 10px; /* Add a subtle border radius */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.about-company h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: hsla(297, 80%, 67%, 0); /* Accent color */
+  margin-bottom: 20px;
+}
+
+.about-company p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Unique Factors Section */
+.unique-factors {
+  background-color: rgba(249, 249, 249, 0.9); /* Semi-transparent for light background */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.unique-factors h2 {
+  font-size: 28px;
+  color: hsl(240, 4%, 5%);
+  margin-bottom: 20px;
+}
+
+.factors-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.factor-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.factor-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: 
+  hsl(0, 0%, 4%);
+}
+
+.factor-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Meet the Team Section */
+.meet-team {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.meet-team h2 {
+  font-size: 28px;
+  color: hsl(300, 100%, 2%);
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 180px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: hsl(300, 100%, 1%);
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Footer Section */
+.footer {
+  background-color: hsl(204, 86%, 53%);
+  color: white;
+  /* padding:; */
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.footer-social a:hover {
+  color: hsl(297, 80%, 67%);
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .header-section {
-    background-image: url('/public/images/Home.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    margin-top: 0.2%;
-    position: relative;
+    height: 200px;
   }
-  
-  .overlay {
-    background-color: rgba(0, 0, 50, 0.5);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
+
+  .header-section h1 {
+    font-size: 28px;
   }
-  
-  .overlay h1 {
-    font-size: 48px;
-    margin: 0;
-  }
-  
-  .overlay p {
-    font-size: 18px;
-  }
-  
-  /* About Company Section */
-  .about-company {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .about-company h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .about-company p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.5;
-  }
-  
-  .company-image img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
-  
-  /* Company Unique Factor Section */
-  .unique-factors {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .unique-factors h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .factors-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .factor-item {
-    background-color: white;
-    padding: 20px;
-    width: 200px;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Meet Our Team Section */
-  .meet-team {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .meet-team h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .team-members {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .team-member {
-    text-align: center;
-    width: 150px;
-    margin: 10px;
-  }
-  
-  .team-member img {
-    width: 100%;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .team-member h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .team-member p {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  /* Footer Section */
-  .footer-section {
-    background-color: hsl(297, 80%, 67%);
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .try-button {
-    background-color: #ff6600;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
+
   .footer {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-    background-color: hsl(297, 80%, 67%);
+    flex-direction: column;
   }
-  
-  .footer-col h4 {
-    font-size: 16px;
-    margin-bottom: 10px;
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .footer-col ul {
-    list-style: none;
-    padding: 0;
+
+  .footer-links {
+    flex-direction: column;
+    margin-bottom: 20px;
   }
-  
-  .footer-col ul li {
-    font-size: 14px;
-    margin-bottom: 5px;
+
+  .footer-social {
+    margin-bottom: 20px;
   }
-  
-  .footer-col input {
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-  }
-  
+}

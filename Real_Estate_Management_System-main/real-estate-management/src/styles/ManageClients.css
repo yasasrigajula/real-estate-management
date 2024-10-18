@@ -1,241 +1,119 @@
-/* .manage-clients {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .table-container {
-    overflow-x: auto;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-  }
-  
-  .btn {
-    display: inline-flex;
-    padding: 10px;
-    margin: 8px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 12px;
-    line-height: 1.2;
-    text-align: center;
-    white-space: nowrap;
-    transition: background-color 0.2s;
-  }
-
-  .b {
-    display: inline-flex;
-  }
-  
-  .btn-approve {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  .btn-approve:hover {
-    background-color: #45a049;
-  }
-  
-  .btn-reject {
-    background-color: #f44336;
-    color: white;
-  }
-  
-  .btn-reject:hover {
-    background-color: #d32f2f;
-  }
-  
-  @media screen and (max-width: 768px) {
-    table {
-      font-size: 14px;
-    }
-  
-    th, td {
-      padding: 6px;
-    }
-  
-    .btn {
-      padding: 3px 6px;
-      font-size: 11px;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    table, thead, tbody, th, td, tr {
-      display: block;
-    }
-    
-    thead tr {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-    }
-    
-    tr {
-      margin-bottom: 10px;
-      border-bottom: 2px solid #ddd;
-    }
-    
-    td {
-      border: none;
-      position: relative;
-      padding-left: 50%;
-      padding-bottom: 5px;
-    }
-    
-    td:before {
-      content: attr(data-label);
-      position: absolute;
-      left: 6px;
-      width: 45%;
-      padding-right: 10px;
-      white-space: nowrap;
-      font-weight: bold;
-    }
-    
-    .btn {
-      display: inline-block;
-      width: auto;
-      min-width: 60px;
-    }
-  } */
-
-
-  /* Container */
+/* Container */
 .manage-clients {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px; /* Increased the padding for better spacing */
-  background-color: #f8f8f8; /* Added a light background color */
-  border-radius: 8px; /* Added rounded corners */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Added a subtle box shadow */
+  padding: 30px;
+  background-color: #e9f3fc; /* Light blueish background */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
 }
 
 /* Heading */
 h2 {
   text-align: center;
-  margin-bottom: 30px; /* Increased the bottom margin for better spacing */
-  color: #333; /* Changed the heading color */
-  font-size: 24px; /* Increased the font size */
-  font-weight: 600; /* Increased the font weight */
+  margin-bottom: 30px;
+  color: #2b6cb0; /* Dark blue heading */
+  font-size: 24px;
+  font-weight: 600;
 }
 
 /* Table Container */
 .table-container {
   overflow-x: auto;
-  margin-bottom: 30px; /* Added bottom margin for better spacing */
+  margin-bottom: 30px;
 }
 
 /* Table Styles */
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: white; /* Added a white background for the table */
-  border-radius: 6px; /* Added rounded corners for the table */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Added a subtle box shadow */
+  background-color: white; /* White background for the table */
+  border-radius: 6px; /* Rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
 }
 
 th, td {
-  padding: 12px 16px; /* Increased the padding for better readability */
+  padding: 12px 16px;
   text-align: left;
-  border-bottom: 1px solid #f0f0f0; /* Changed the border color */
+  border-bottom: 1px solid #e2e8f0; /* Light grey border */
 }
 
 th {
-  background-color: #f5f5f5; /* Changed the header background color */
-  font-weight: 600; /* Increased the font weight for the headers */
-  color: #333; /* Changed the header text color */
+  background-color: #edf2f7; /* Light grey for headers */
+  font-weight: 600;
+  color: #2b6cb0; /* Dark blue header text */
+}
+
+td {
+  color: #4a5568; /* Grey text for better contrast */
 }
 
 /* Buttons */
 .btn {
   display: inline-flex;
-  padding: 10px 16px; /* Increased the padding for better size */
+  padding: 10px 16px;
   margin: 8px;
   border: none;
-  border-radius: 4px; /* Increased the border radius for a more rounded look */
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 14px; /* Increased the font size */
+  font-size: 14px;
   line-height: 1.2;
   text-align: center;
   white-space: nowrap;
-  transition: background-color 0.2s;
-}
-
-.b {
-  display: inline-flex;
+  transition: background-color 0.2s, transform 0.2s; /* Smooth transitions */
 }
 
 .btn-approve {
-  background-color: #4CAF50;
+  background-color: #2b6cb0; /* Dark blue for approve */
   color: white;
 }
 
 .btn-approve:hover {
-  background-color: #45a049;
+  background-color: #1d4f91; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect */
 }
 
 .btn-reject {
-  background-color: #f44336;
+  background-color: #e53e3e; /* Red for reject */
   color: white;
 }
 
 .btn-reject:hover {
-  background-color: #d32f2f;
+  background-color: #c53030;
+  transform: translateY(-2px); /* Lift effect */
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .manage-clients {
-    padding: 20px; /* Reduced the padding for smaller screens */
+    padding: 20px;
   }
 
   h2 {
-    font-size: 20px; /* Reduced the font size for smaller screens */
+    font-size: 20px;
   }
 
   table {
-    font-size: 14px; /* Reduced the font size for smaller screens */
+    font-size: 14px;
   }
 
   th, td {
-    padding: 10px 12px; /* Reduced the padding for smaller screens */
+    padding: 10px 12px;
   }
 
   .btn {
-    padding: 8px 12px; /* Reduced the padding for smaller screens */
-    font-size: 12px; /* Reduced the font size for smaller screens */
+    padding: 8px 12px;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .manage-clients {
-    padding: 15px; /* Further reduced the padding for extra-small screens */
+    padding: 15px;
   }
 
   h2 {
-    font-size: 18px; /* Further reduced the font size for extra-small screens */
+    font-size: 18px;
   }
 
   table, thead, tbody, th, td, tr {
@@ -250,7 +128,7 @@ th {
 
   tr {
     margin-bottom: 10px;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 2px solid #e2e8f0;
   }
 
   td {
@@ -268,6 +146,7 @@ th {
     padding-right: 10px;
     white-space: nowrap;
     font-weight: bold;
+    color: #2b6cb0; /* Match header color */
   }
 
   .btn {

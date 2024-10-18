@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="footer-links">
           <Link to="/about">About Us</Link>
           <Link to="/contact">Contact</Link>
-          <Link to="/terms">Terms of Service</Link>
-          <Link to="/privacy">Privacy Policy</Link>
+          <Link to="/properties">Properties</Link>
+          <Link to="/agents">Agents</Link>
         </div>
         <div className="footer-social">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
@@ -18,9 +18,9 @@ const Footer = () => {
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
         </div>
       </div>
-      <div className="footer-bottom">
-        <p>&copy; 2024 Your Real Estate Company. All rights reserved.</p>
-      </div>
+      {/* <div className="footer-bottom">
+        <p>&copy; 2024 NxtHome. All rights reserved.</p>
+      </div> */}
     </footer>
   );
 };

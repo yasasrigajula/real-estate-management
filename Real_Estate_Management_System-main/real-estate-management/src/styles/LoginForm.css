@@ -1,90 +1,87 @@
 /* src/styles/LoginForm.css */
-/* From Uiverse.io by iamriishav */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f4f8; /* Light gray background */
+}
+
 .form {
-    width: 800px;
-    height:300px;
-    background-color: rgba(255, 255, 255, 1);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
-    border-radius: 5px;
-    font-family: inherit;
-    margin: 0 auto; /* Center the form */
-    margin-top: 100px; /* Add some top margin */
-  }
-  
-  .input {
-    font-size: 15px;
-    padding: 15px 10px;
-    border-radius: 5px;
-    border: none;
-    margin-top: 10px;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .2), 0 .5px .5px rgba(0, 0, 0, .2);
-    outline: none;
-  }
-  
-  .input:focus {
-    outline: 1.2px solid #1877f2;
-  }
-  
-  #loginBtn {
-    margin-top: 10px;
-    width: 100%;
-    padding: 10px 20px;
-    align-self: center;
-    background: #1877f2;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  
-  #loginBtn:hover {
-    background: #196fe0;
-  }
-  
-  #forgotPassword {
-    text-align: center;
-    position: relative;
-    margin-top: 10px;
-    width: 100%;
-    font-size: 13px;
-    align-self: center;
-    font-weight: bold;
-    color: #1877f2;
-  }
-  
-  #forgotPassword::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: .5px;
-    bottom: -25px;
-    left: 0;
-    background: #dadde1;
-  }
-  
-  #forgotPassword:hover {
-    text-decoration: underline;
-  }
-  
-  #createAccountBtn {
-    margin-top: 40px;
-    margin-bottom: 10px;
-    padding: 15px 15px;
-    align-self: center;
-    background: #42b72a;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  #createAccountBtn:hover {
-    background: #34a61d;
-  }
-  
+  width: 400px; /* Set to a smaller width for a more compact design */
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.input {
+  font-size: 16px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  transition: border 0.3s;
+}
+
+.input:focus {
+  border-color: #007bff; /* Border color on focus */
+  outline: none;
+}
+
+.dropdown {
+  padding: 12px 15px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  background-color: #f9f9f9; /* Light background for dropdown */
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.dropdown:focus {
+  border-color: #007bff; /* Border color on focus */
+  outline: none;
+}
+
+#loginBtn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  background: #007bff; /* Bootstrap primary color */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#loginBtn:hover {
+  background: #0056b3; /* Darker shade on hover */
+}
+
+.register-link {
+  text-align: center;
+  font-size: 14px;
+  color: #007bff; /* Link color */
+}
+
+.register-link a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* No underline */
+}
+
+.register-link a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

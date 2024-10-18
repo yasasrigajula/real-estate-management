@@ -1,13 +1,27 @@
+/* src/styles/RegistrationForm.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
 .registration-form {
-  width: 50%;
-  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  max-width: 400px; /* Responsive max-width */
+  background-color: linear-gradient(to right, #6a11cb, #2575fc); 
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 10px 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  font-family: inherit;
+  gap: 15px; /* Increased gap for better spacing */
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  border-radius: 8px; /* Slightly larger border-radius */
   margin: auto;
 }
 
@@ -15,28 +29,36 @@
   font-size: 1rem;
   margin-top: 10px;
   color: #333;
+  font-weight: 600; /* Slightly bolder text */
 }
 
 .registration-form input,
 .registration-form select {
   font-size: 15px;
-  padding: 15px 10px;
+  padding: 12px 10px; /* Adjusted padding for balance */
   border-radius: 5px;
-  border: none;
-  margin-top: 5px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 0.5px 0.5px rgba(0, 0, 0, 0.2);
-  outline: none;
+  border: 1px solid #ccc; /* Solid border */
+  background-color: #f8f9fa; /* Light background for inputs */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtle inset shadow */
+  transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+.registration-form input::placeholder,
+.registration-form select::placeholder {
+  color: #aaa; /* Light gray for placeholder text */
+  opacity: 1; /* Show placeholder */
 }
 
 .registration-form input:focus,
 .registration-form select:focus {
-  outline: 1.2px solid #1877f2;
+  border-color: #1877f2; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
 }
 
 .registration-form button {
   margin-top: 15px;
   width: 100%;
-  padding: 10px 20px;
+  padding: 12px; /* Consistent padding */
   background: #1877f2;
   border: none;
   border-radius: 5px;
@@ -44,14 +66,17 @@
   font-size: 1.3rem;
   font-weight: bold;
   cursor: pointer;
+  transition: background 0.3s; /* Smooth transition for hover */
 }
 
 .registration-form button:hover {
-  background: #196fe0;
+  background: #196fe0; /* Darker shade on hover */
 }
 
 .registration-form .error {
   color: red;
   font-size: 0.875rem;
   margin-top: 5px;
+  display: flex;
+  justify-content: flex-start; /* Align error messages */
 }
